@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../icon/iconfont4.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            var imgList = document.getElementById("imgList");
+            var prev1 = document.getElementById("out1");
+            var next1 = document.getElementById("out");
+            var div1 = document.getElementById("div1");
+            var div2 = document.getElementById("div2");
+            var div3 = document.getElementById("div3");
+            var allA = document.querySelectorAll(".a");
+            let index = 0;
+            allA[index].style.backgroundColor = "grey";
+            var moveArr = [div1,div2,div3];
+            let a = 0;
+            let b = 0;
+            next1.onclick = function(){
+                a = (a + 1) % allA.length;
+                b = (b + 1) % allA.length;
+                console.log(a)
+                console.log(b)
+                allA.forEach((item, index1)=> {
+                    if (index1 === a){
+                        item.style.backgroundColor = "grey";
+                    }else{
+                        item.style.backgroundColor = "#E1E1E1";
+                    }
+                })
+                imgList.style.transform = `translateX(calc(-1250*${a}px))`;
+            };
+            prev1.onclick = function(){
+                b--;
+                if(b<0){
+                    b = (moveArr.length-1)
+                }
+                imgList.style.left = ((b * 1250 )+40)* -1 + "px";
+                console.log(b)
+                allA.forEach((item, index1)=> {
+                    if (index1 === b){
+                        item.style.backgroundColor = "grey";
+                    }else{
+                        item.style.backgroundColor = "#E1E1E1";
+                    }
+                })
+            };
+
+            var imgList1 = document.getElementById("imgList1");
+            var prev2 = document.getElementById("out3");
+            var next2 = document.getElementById("out2");
+            var div4 = document.getElementById("div4");
+            var div5 = document.getElementById("div5");
+            var allA1 = document.querySelectorAll(".b");
+            let index2 = 0;
+            allA1[index2].style.backgroundColor = "grey";
+            var moveArr = [div4,div5];
+            let c = 0;
+            let d = 0;
+            next2.onclick = function(){
+                c = (c + 1) % allA.length;
+                d = (d + 1) % allA.length;
+                console.log(c)
+                console.log(d)
+                allA1.forEach((item1, index3)=> {
+                    if (index3 === c){
+                        item1.style.backgroundColor = "grey";
+                    }else{
+                        item1.style.backgroundColor = "#E1E1E1";
+                    }
+                })
+                imgList1.style.transform = `translateX(calc(-1210*${c}px))`;
+            };
+            prev2.onclick = function(){
+                d--;
+                if(d<0){
+                    d = (moveArr.length-1)
+                }
+                imgList1.style.left = ((d * 1210 )-20)* -1 + "px";
+                console.log(d)
+                allA1.forEach((item1, index3)=> {
+                    if (index3 === d){
+                        item1.style.backgroundColor = "grey";
+                    }else{
+                        item1.style.backgroundColor = "#E1E1E1";
+                    }
+                })
+            };
+        }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="top-a">
+        <img src="../image/Snipaste_2024-01-29_10-57-12.png">
+        <div class="yinyueguan"><span>音乐馆</span></div>
+        <div class="left">
+            <a href="https://y.qq.com/n/ryqq/profile" target="_self">我的音乐</a>
+            <a href="https://y.qq.com/download/index.html" target="_blank">客户端</a>
+            <a href="https://y.qq.com/artists" target="_blank">开放平台</a>
+            <a href="https://y.qq.com/portal/vipportal/index.html" target="_blank">VIP</a>
+        </div>
+        <div class="right">
+            <div class="input">
+                <input type="text" name="account" placeholder="搜索音乐、MV、歌单、用户">
+                <span>登录</span>
+                <i class="iconfont icon-sousuo"></i>
+                <span>
+            </div>
+            <div class="VIP">
+                <span>开通VIP</span>
+            </div>
+            <div class="chongzhi">
+                <span>充值</span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="top-b">
+        <span>首页</span>
+        <a href="https://y.qq.com/n/ryqq/singer_list" target="_self">歌手</a>
+        <a href="https://y.qq.com/n/ryqq/album" target="_self">新碟</a>
+        <a href="https://y.qq.com/n/ryqq/toplist/4" target="_self">排行榜</a>
+        <a href="https://y.qq.com/n/ryqq/category" target="_self">分类歌单</a>
+        <a href="https://y.qq.com/n/ryqq/radio" target="_self">电台</a>
+        <a href="https://y.qq.com/n/ryqq/mvList" target="_self">MV</a>
+        <a href="https://y.qq.com/n/ryqq/album_mall" target="_self">数字专辑</a>
+    </div>
+    <!-- 歌单推荐 -->
+    <div class="middle-a">
+        <div class="title">
+            <span>歌</span>
+            <span>单</span>
+            <span>推</span>
+            <span>荐</span>
+        </div>
+        <div class="word">
+            <span>为你推荐</span>
+            <span>运动</span>
+            <span>粤语</span>
+            <span>经典国语</span>
+            <span>官方歌单</span>
+            <span>情歌</span>
+        </div>
+        <div id="out"><img src="../image/Snipaste_2024-01-30_23-38-32.png"></div>
+        <div id="out1"><img src="../image/Snipaste_2024-01-31_11-10-27.png"></div>
+        <div id="outer">
+            <ul id="imgList" style="transform:translateX(0);transition: all 0.3s">
+                <li id="div1"> 
+                    <div class="yinyuefenmian">
+                        <div class="music1">
+                            <div class="one"><img src="../image/Snipaste_2024-01-30_16-19-24.png"></div>
+                            <div class="wenan1">
+                                <span>伯远.热血难凉的追梦少年</span>
+                                <br>
+                                <span>播放量: 46.6万</span>
+                            </div>
+                        </div>
+                        <div class="music2">
+                            <div class="two"><img src="../image/Snipaste_2024-01-30_16-19-33.png"></div>
+                            <div class="wenan2">
+                                <span>KPOP热歌挑战! DNA动了</span>
+                                <br>
+                                <span>播放量: 1050.6万</span>
+                            </div>
+                        </div>
+                        <div class="music3">
+                            <div class="three"><img src="../image/Snipaste_2024-01-30_16-19-41.png"></div>
+                            <div class="wenan3">
+                                <span>原来情绪上头了,连听歌也会哭啊</span>
+                                <br>
+                                <span>播放量: 1718.0万</span>
+                            </div>
+                        </div>
+                        <div class="music4">
+                            <div class="four"><img src="../image/Snipaste_2024-01-30_16-19-49.png"></div>
+                            <div class="wenan4">
+                                <span>到点了该emo了,00后的听歌现状</span>
+                                <br>
+                                <span>播放量: 2249.4万</span>
+                            </div>
+                        </div>
+                        <div class="music5">
+                            <div class="five"><img src="../image/Snipaste_2024-01-30_16-19-56.png"></div>
+                            <div class="wenan5">
+                                <span>抖音热歌: 单曲循环不切歌</span>
+                                <br>
+                                <span>播放量: 2019.2万</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="div2">
+                    <div class="yinyuefenmian1">
+                        <div class="music6">
+                            <div class="six"><img src="../image/Snipaste_2024-02-21_16-56-28.png"></div>
+                            <div class="wenan6">
+                                <span>抖音热歌:超好听的BGM</span>
+                                <br>
+                                <span>播放量: 6025.0万</span>
+                            </div>
+                        </div>
+                        <div class="music7">
+                            <div class="seven"><img src="../image/Snipaste_2024-02-21_16-56-40.png"></div>
+                            <div class="wenan7">
+                                <span>Kpop元气女团:开启上班自嗨模式</span>
+                                <br>
+                                <span>播放量: 1043.9万</span>
+                            </div>
+                        </div>
+                        <div class="music8">
+                            <div class="eight"><img src="../image/Snipaste_2024-02-21_16-56-48.png"></div>
+                            <div class="wenan8">
+                                <span>伤感emo片段:忍不住就红了眼眶</span>
+                                <br>
+                                <span>播放量: 4964.5万</span>
+                            </div>
+                        </div>
+                        <div class="music9">
+                            <div class="nine"><img src="../image/Snipaste_2024-02-21_16-56-56.png"></div>
+                            <div class="wenan9">
+                                <span>长安烬明 电视剧原声</span>
+                                <br>
+                                <span>播放量: 1514.5万</span>
+                            </div>
+                        </div>
+                        <div class="music10">
+                            <div class="ten"><img src="../image/Snipaste_2024-02-21_16-57-05.png"></div>
+                            <div class="wenan10">
+                                <span>JJ林俊杰|有些歌只为爱而作</span>
+                                <br>
+                                <span>播放量: 1511.9万</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="div3">
+                    <div class="yinyuefenmian2">
+                        <div class="music11">
+                            <div class="eleven"><img src="../image/Snipaste_2024-02-21_16-57-12.png"></div>
+                            <div class="wenan11">
+                                <span>一听一整天!久听不厌的炙口热曲</span>
+                                <br>
+                                <span>播放量: 3577.1万</span>
+                            </div>
+                        </div>
+                        <div class="music12">
+                            <div class="twelve"><img src="../image/Snipaste_2024-02-21_16-57-19.png"></div>
+                            <div class="wenan12">
+                                <span>抖音车载DJ|解压100%</span>
+                                <br>
+                                <span>播放量: 4169.2万</span>
+                            </div>
+                        </div>
+                        <div class="music13">
+                            <div class="thirteen"><img src="../image/Snipaste_2024-02-21_16-57-26.png"></div>
+                            <div class="wenan13">
+                                <span>电量1%也要听!每一首都好听出圈</span>
+                                <br>
+                                <span>播放量: 4525.9万</span>
+                            </div>
+                        </div>
+                        <div class="music14">
+                            <div class="fourteen"><img src="../image/Snipaste_2024-02-21_16-57-35.png"></div>
+                            <div class="wenan14">
+                                <span>抖音热歌:带着耳机去散步</span>
+                                <br>
+                                <span>播放量: 1587.0万</span>
+                            </div>
+                        </div>
+                        <div class="music15">
+                            <div class="fifteen"><img src="../image/Snipaste_2024-02-21_16-57-49.png"></div>
+                            <div class="wenan15">
+                                <span>欧美贺新.2024龙马精神</span>
+                                <br>
+                                <span>播放量: 97.5万</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <div class="blank1"></div>
+    <div class="blank2">
+        <div id="navDiv">
+            <a class = "a" href="javascript:;" style="background-color: rgb( 225, 225, 225);"></a>
+            <a class = "a" href="javascript:;" style="background-color: rgb( 225, 225, 225);"></a>
+            <a class = "a" href="javascript:;" style="background-color: rgb( 225, 225, 225);"></a>
+        </div>
+    </div>
+    <!-- 新歌首发 -->
+    <div class="middle-b">
+        <div class="title1">
+            <span>新</span>
+            <span>歌</span>
+            <span>首</span>
+            <span>发</span>
+        </div>
+        <div class="word1">
+            <span>最新</span>
+            <span>内地</span>
+            <span>港台</span>
+            <span>欧美</span>
+            <span>韩国</span>
+            <span>日本</span>
+        </div>
+        <div id="out2"><img src="../image/Snipaste_2024-01-30_23-38-32.png"></div>
+        <div id="out3"><img src="../image/Snipaste_2024-01-31_11-10-27.png"></div>
+        <div class="bofang">
+            <span>播放全部</span>
+            <img src="../image/Snipaste_2024-01-31_13-27-00.png">
+            <div class="shade"></div>
+        </div>
+        <div id="outer1">
+            <ul id="imgList1" style="transform:translateX(0);transition: all 0.3s">
+                <li id="div4">
+                    <div class="yi">
+                        <div class="song1">
+                            <img src="../image/Snipaste_2024-01-31_11-15-47.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi1">
+                            <span>Road Trip</span>
+                            <span>03:13</span>
+                            <br>
+                            <span>佐佐木惠梨</span>
+                        </div>
+                        <div class="song2">
+                            <img src="../image/Snipaste_2024-01-31_11-15-56.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi2">
+                            <span>就今夜</span>
+                            <span>03:18</span>
+                            <br>
+                            <span>莫莫Mosy</span>
+                        </div>
+                        <div class="song3">
+                            <img src="../image/Snipaste_2024-01-31_11-16-04.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi3">
+                            <span>18</span>
+                            <span>02:48</span>
+                            <br>
+                            <span>XXSC</span>
+                        </div>
+                    </div>
+                    <div class="er">
+                        <div class="song4">
+                            <img src="../image/Snipaste_2024-01-31_11-16-18.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi4">
+                            <span>明年应该是个好年</span>
+                            <span>03:25</span>
+                            <br>
+                            <span>陈一墨</span>
+                        </div>
+                        <div class="song5">
+                            <img src="../image/Snipaste_2024-01-31_11-16-26.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi5">
+                            <span>你睡了吗</span>
+                            <span>02:30</span>
+                            <br>
+                            <span>汉生</span>
+                        </div>
+                        <div class="song6">
+                            <img src="../image/Snipaste_2024-01-31_11-16-34.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi6">
+                            <span>文萃路的猜想</span>
+                            <span>02:56</span>
+                            <br>
+                            <span>OY MUSIC</span>
+                        </div>
+                    </div>
+                    <div class="san">
+                        <div class="song7">
+                            <img src="../image/Snipaste_2024-01-31_11-16-42.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi7">
+                            <span>青空Magic Day</span>
+                            <span>03:56</span>
+                            <br>
+                            <span>Sakula小舞</span>
+                        </div>
+                        <div class="song8">
+                            <img src="../image/Snipaste_2024-01-31_11-16-48.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi8">
+                            <span>就此别过</span>
+                            <span>02:47</span>
+                            <br>
+                            <span>MAREA/EEEGO</span>
+                        </div>
+                        <div class="song9">
+                            <img src="../image/Snipaste_2024-01-31_11-16-55.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi9">
+                            <span>静悄悄（治愈版</span>
+                            <span>03:20</span>
+                            <br>
+                            <span>李飘飘</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="div5">
+                    <div class="si">
+                        <div class="song10">
+                            <img src="../image/Snipaste_2024-02-29_20-57-30.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi10">
+                            <span>以爱之名《别对我动心》</span>
+                            <span>03:33</span>
+                            <br>
+                            <span>旅行团乐队</span>
+                        </div>
+                        <div class="song11">
+                            <img src="../image/Snipaste_2024-02-29_20-57-36.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi11">
+                            <span>1104</span>
+                            <span>03:48</span>
+                            <br>
+                            <span>张远</span>
+                        </div>
+                        <div class="song12">
+                            <img src="../image/Snipaste_2024-02-29_20-57-43.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi12">
+                            <span>老朋友《紫川·光明三杰》</span>
+                            <span>03:44</span>
+                            <br>
+                            <span>摩登兄弟刘宇宁</span>
+                        </div>
+                    </div>
+                    <div class="wu">
+                        <div class="song13">
+                            <img src="../image/Snipaste_2024-02-29_20-57-49.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi13">
+                            <span>明日预告(Spoiler)</span>
+                            <span>03:10</span>
+                            <br>
+                            <span>univu5</span>
+                        </div>
+                        <div class="song14">
+                            <img src="../image/Snipaste_2024-02-29_20-57-56.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi14">
+                            <span>Monster</span>
+                            <span>03:16</span>
+                            <br>
+                            <span>丁程鑫</span>
+                        </div>
+                        <div class="song15">
+                            <img src="../image/Snipaste_2024-02-29_20-58-02.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi15">
+                            <span>你靠近我的身边《别对我动心……</span>
+                            <span>03:00</span>
+                            <br>
+                            <span>蔡文佑</span>
+                        </div>
+                    </div>
+                    <div class="liu">
+                        <div class="song16">
+                            <img src="../image/Snipaste_2024-02-29_20-58-07.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi16">
+                            <span>PHUKET FREESTYLE</span>
+                            <span>03:56</span>
+                            <br>
+                            <span>布瑞吉Bridge/GAI周延/</span>
+                        </div>
+                        <div class="song17">
+                            <img src="../image/Snipaste_2024-02-29_20-58-13.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi17">
+                            <span>还记得</span>
+                            <span>02:47</span>
+                            <br>
+                            <span>刘雨昕</span>
+                        </div>
+                        <div class="song18">
+                            <img src="../image/Snipaste_2024-02-29_20-58-18.png">
+                            <i class="iconfont icon-zanting"></i>
+                            <div class="shade1"></div>
+                        </div>
+                        <div class="wenzi18">
+                            <span>Diff.</span>
+                            <span>03:20</span>
+                            <br>
+                            <span>李幸倪</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    <div class="blank3">
+        <div id="navDiv1">
+            <a class = "b" href="javascript:;" style="background-color: rgb( 225, 225, 225);"></a>
+            <a class = "b" href="javascript:;" style="background-color: rgb( 225, 225, 225);"></a>
+        </div>
+    </div>
+     <!-- 页脚 -->
+    <div class="bottom">
+        <div class="hang">
+            <div class="first">
+                <div class="first1">下载QQ客户端</div>
+                <div class="hang1">
+                    <div class="fir">
+                        <div class="f"><img src="../image/Snipaste_2024-02-29_22-16-22.png"></div>
+                        <div class="f1">PC版</div>
+                    </div>
+                    <div class="sec">
+                        <div class="s"><img src="../image/Snipaste_2024-02-29_22-17-22.png"></div>
+                        <div class="s1">Mac版</div>
+                    </div>
+                    <div class="thir">
+                        <div class="t"><img src="../image/Snipaste_2024-02-29_22-17-50.png"></div>
+                        <div class="t1">Android版</div>
+                    </div>
+                    <div class="fou">
+                        <div class="fo"><img src="../image/Snipaste_2024-02-29_22-53-42.png"></div>
+                        <div class="fo1">iPhone版</div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="second1">特色产品</div>
+                <div class="hang2">
+                    <div class="sq">
+                        <div class="su"><img src="../image/Snipaste_2024-02-29_22-18-39.png"></div>
+                        <div class="su1">全民K歌</div>
+                    </div>
+                    <div class="sev">
+                        <div class="se"><img src="../image/Snipaste_2024-02-29_22-19-09.png"></div>
+                        <div class="se1">银河特效</div>
+                    </div>
+                    <div class="eig">
+                        <div class="e"><img src="../image/Snipaste_2024-02-29_22-19-30.png"></div>
+                        <div class="e1">QPlay</div>
+                    </div>
+                    <div class="nin">
+                        <div class="n"><img src="../image/Snipaste_2024-02-29_22-20-00.png"></div>
+                        <div class="n1">Fan直播伴侣</div>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div class="third1">合作链接</div>
+                <div class="hang3">
+                    <div class="el">
+                        <div>CJ ENM</div>
+                        <div>最新版QQ</div>
+                        <div>QQ浏览器</div>
+                        <div>企鹅FM</div>
+                        <div>酷我音乐</div>
+                    </div>
+                    <div class="tp">
+                        <div>腾讯视频</div>
+                        <div>腾讯社交广告</div>
+                        <div>腾讯微云</div>
+                        <div>智能电视网</div>
+                        <div>酷狗听书</div>
+                    </div>
+                    <div class="thi">
+                        <div>手机QQ空间</div>
+                        <div>电脑管家</div>
+                        <div>腾讯云</div>
+                        <div>当贝市场</div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <a href="https://www.tencent.com/zh-cn/" target="_blank">关于腾讯</a>
+            <span>|</span>
+            <a href="https://wx.mail.qq.com/list/readtemplate?name=app_intro.html#/agreement/mailService" target="_blank">服务条款</a>
+            <span>|</span>
+            <a href="https://wx.mail.qq.com/list/readtemplate?name=app_intro.html#/agreement/appPolicy" target="_blank">隐私政策</a>
+            <span>|</span>
+            <a href="https://kf.qq.com/product/email.html" target="_blank">客服中心</a>
+            <span>|</span>
+            <a href="https://wx.mail.qq.com/?return_target=14" target="_blank">联系我们</a>
+            <span>|</span>
+            <a href="https://service.mail.qq.com/" target="_blank">帮助中心</a>
+            <span>|</span>
+        <div class="grey1">
+            &copy;1998-2022 Tencent Inc.All Right Reserved.
+        </div>
+        <div class="grey2">
+            粤公网安备 &nbsp;44030002000001号 &nbsp;ICP备案号 &nbsp;粤B2-20090059 &nbsp;增值电信业务经营许可证 &nbsp;粤B2-20090059
+        </div>
+    </div>
+</body>
+</html>

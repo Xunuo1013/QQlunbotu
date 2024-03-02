@@ -1,0 +1,2238 @@
+/* 导航上 */
+html,body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.top-a{
+    display: flex;
+    width: 100%;
+    height: 93px;
+}
+.left{
+    display: flex;
+    height: 93px;
+    width: 380px;
+    margin-left: 370px;
+    margin-right: 0px;
+}
+.left a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+    align-self: center;
+}
+a:hover{
+    color: rgb(51, 206, 131);
+}
+.yinyueguan{
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 26.3vw;
+    background-color: rgb(49, 194, 124);
+    height: 93px;
+    width: 93px;
+}
+.yinyueguan span{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    flex: 1;
+    font-family: "Microsoft Yahei";
+    align-self: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.top-a img{
+    height: 55px;
+    align-self: center;
+    position: relative;
+    left: 14vw;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    height: 93px;
+    line-height: 93px;
+    width: 600px;
+    margin-left: 0px;
+}
+.input{
+    display: flex;
+}
+.input input{
+    align-self: center;
+    font-size: 15px;
+    outline: none;
+    height: 32px;
+    width: 225px;
+    text-indent: 10px;
+    border: solid 0.1px rgb(204, 204, 204);
+    border-radius: 4px;
+}
+i{
+    position: relative;
+    right: 4.3vw;
+    color: rgb(123, 122, 123);
+    cursor: pointer;
+}
+.top-a i:hover{
+    color: rgb(51, 206, 131);
+}
+.input span{
+    align-self: center;
+    margin-left: 18px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.VIP{
+    align-self: center;
+    display: flex;
+    background-color: rgb(49, 194, 124);
+    height: 40px;
+    width: 130px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: -15px;
+    margin-right: 10px
+}
+.VIP span{
+    margin-left: 40px;
+    align-self: center;
+    color: rgb(255, 255, 255);
+}
+.VIP>img{
+    align-self: center;
+    margin-left: -13vw;
+    width: 15px;
+    height: 13px;
+}
+.chongzhi{
+    align-self: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 85px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: solid 0.1px rgb(204, 204, 204);
+}
+.chongzhi span{
+    flex: 1;
+    align-self: center;
+    margin-left: 25px;
+}
+.chongzhi>img{
+    align-self: center;
+    height: 13px;
+    width: 15px;
+    margin-left: -1111111vw;  
+}
+
+
+
+hr{
+    width: 73vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid 0.1px rgb(242, 242, 242);
+}
+
+
+/* 导航下 */
+
+.top-b{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+.top-b>a{
+    text-decoration: none;
+    color: black;
+    font-family: "Microsoft Yahei";
+    align-self: center;
+    cursor: pointer;
+    margin: 30px;
+}
+a:hover{
+    color: rgb(51, 206, 131);
+}
+.top-b>span{
+    text-decoration: none;
+    color: rgb(51, 206, 131);
+    font-family: "Microsoft Yahei";
+    align-self: center;
+    cursor: pointer;
+    margin: 30px;
+}
+
+/* 中部上 */
+
+
+.middle-a{
+    width: 100%;
+    height: 305px;
+    background-image: linear-gradient(rgb(242 ,242, 242),rgb(252 ,252 ,252));
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title span{
+    font-size: 30px;
+    font-family: "Microsoft Yahei";
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    margin: 12px;
+    margin-top: 3vw;
+}
+.word{
+    display: flex;
+    justify-content: center;
+}
+.word span{
+    margin: 25px;
+}
+.word span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.word span:nth-of-type(1){
+    color: rgb(51, 206, 131);
+}
+.blank1{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(253, 253, 253);
+    margin-top: 0;
+}
+.blank2{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+}
+#navDiv{
+    display: flex;
+    justify-content: center;
+}
+#navDiv a{
+    width: 12px;
+    height: 12px;
+    border-radius: 40px;
+    margin: 15px;
+    margin-top: 50px;
+    z-index: 200;
+}
+#out{
+   position: absolute;
+   right: -85px;
+   top: 20.5vw;
+}
+#out img{
+    width: 85px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.middle-a:hover #out>img{
+    transform: translateX(-85px);
+    cursor: pointer;
+}
+#out1{
+    position: absolute;
+    left: -85px;
+    top: 20.5vw;
+ }
+#out1 img{
+    width: 85px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.middle-a:hover #out1>img{
+    transform: translateX(85px);
+    cursor: pointer;
+}
+
+/* 歌单推荐 */
+/* 音乐封面1 */
+
+
+#outer{
+    position: relative;
+    height: 350px;
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#imgList {
+    list-style: none;
+    display: flex;
+    width: 2580px;
+    position: absolute;
+    left: -40px;
+}
+.yinyuefenmian{
+    display: flex;
+    justify-content: center;
+}
+.music1{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.one{
+    overflow: hidden;
+}
+.one img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music1:hover img{
+    transform: scale(1.1); 
+}
+
+.music2{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.two{
+    overflow: hidden;
+}
+.two img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music2:hover img{
+    transform: scale(1.1); 
+}
+
+.music3{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.three{
+    overflow: hidden;
+}
+.three img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music3:hover img{
+    transform: scale(1.1); 
+}
+
+
+.music4{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.four{
+    overflow: hidden;
+}
+.four img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music4:hover img{
+    transform: scale(1.1); 
+}
+
+
+.music5{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.five{
+    overflow: hidden;
+}
+.five img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music5:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+/* 文案1 */
+
+
+.wenan1{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan1>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan1>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan1>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan2{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan2>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan2>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan2>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan3{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan3>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan3>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan3>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan4{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan4>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan4>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan4>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan5{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan5>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan5>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan5>span{
+    position: absolute;
+    left: 0;
+}
+
+
+
+/* 音乐封面2 */
+.yinyuefenmian1{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.music6{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.six{
+    overflow: hidden;
+}
+.six img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music6:hover img{
+    transform: scale(1.1); 
+}
+
+.music7{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.seven{
+    overflow: hidden;
+}
+.seven img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music7:hover img{
+    transform: scale(1.1); 
+}
+
+.music8{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.eight{
+    overflow: hidden;
+}
+.eight img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music8:hover img{
+    transform: scale(1.1); 
+}
+
+
+.music9{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.nine{
+    overflow: hidden;
+}
+.nine img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music9:hover img{
+    transform: scale(1.1); 
+}
+
+.music10{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.ten{
+    overflow: hidden;
+}
+.ten img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music10:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+/* 文案2 */
+
+
+.wenan6{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan6>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan6>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan6>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan7{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan7>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan7>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan7>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan8{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan8>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan8>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan8>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan9{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan9>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan9>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan9>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan10{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan10>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan10>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan10>span{
+    position: absolute;
+    left: 0;
+}
+
+/* 音乐封面3 */
+
+.yinyuefenmian2{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.music11{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.eleven{
+    overflow: hidden;
+}
+.eleven img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music11:hover img{
+    transform: scale(1.1); 
+}
+
+.music12{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.twelve{
+    overflow: hidden;
+}
+.twelve img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music12:hover img{
+    transform: scale(1.1); 
+}
+
+.music13{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.thirteen{
+    overflow: hidden;
+}
+.thirteen img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music13:hover img{
+    transform: scale(1.1); 
+}
+
+
+.music14{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.fourteen{
+    overflow: hidden;
+}
+.fourteen img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music14:hover img{
+    transform: scale(1.1); 
+}
+
+.music15{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.fifteen{
+    overflow: hidden;
+}
+.fifteen img{
+    width: 230px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.music15:hover img{
+    transform: scale(1.1); 
+}
+
+
+/* 文案3 */
+
+
+.wenan11{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan11>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan11>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan11>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan12{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan12>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan12>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan12>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan13{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan13>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan13>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan13>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan14{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan14>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan14>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan14>span{
+    position: absolute;
+    left: 0;
+}
+
+.wenan15{
+    position: relative;
+    width: 230px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin-top: 0.5vw;
+}
+.wenan15>span:nth-of-type(1):hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenan15>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+}
+.wenan15>span{
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+/* 中部下 */
+
+.middle-b{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgb(242 ,242, 242),rgb(250 ,250 ,250));
+    position: relative;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+}
+.title1 span{
+    font-size: 30px;
+    font-family: "Microsoft Yahei";
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    margin: 12px;
+    margin-top: 3vw;
+}
+.word1{
+    display: flex;
+    justify-content: center;
+}
+.word1 span{
+    margin: 25px;
+}
+.word1 span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.word1 span:nth-of-type(1){
+    color: rgb(51, 206, 131);
+}
+.bofang{
+    width: 125px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    position: absolute;
+    top: 6.5vw;
+    left: 16vw;
+    border: solid 0.1px rgb(204, 204, 204);
+    border-radius: 3px;
+}
+.bofang span{
+    color: black;
+    position: absolute;
+    left: 2.5vw;
+    vertical-align: middle;
+}
+.bofang img{
+    width: 14px;
+    position: absolute;
+    top: 10px;
+    left: 1vw;
+}
+.shade{
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    height: 36px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 0.1px rgb(204, 204, 204);
+    border-radius: 3px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.bofang:hover .shade{
+    opacity: 0.05;
+    cursor: pointer;
+}
+.blank3{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+}
+.blank3 img{
+    width: 180px;
+    position:absolute;
+    top: 20%;
+    left:50%;
+    transform:translate(-50%,-20%);
+    cursor: pointer;
+}
+#out2{
+    position: absolute;
+    right: -85px;
+    top: 12.5vw;
+ }
+#out2 img{
+    width: 85px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.middle-b:hover #out2>img{
+    transform: translateX(-85px);
+}
+#out3{
+    position: absolute;
+    left: -85px;
+    top: 12.5vw;
+}
+#out3 img{
+    width: 85px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.middle-b:hover #out3>img{
+    transform: translateX(85px);
+    cursor: pointer;
+}
+#navDiv1{
+    display: flex;
+    justify-content: center;
+}
+#navDiv1 a{
+    width: 12px;
+    height: 12px;
+    border-radius: 40px;
+    margin: 15px;
+    margin-top: 25px;
+    z-index: 200;
+}
+
+
+
+/* 新歌首发 */
+/* 音乐封面4 */
+
+#outer1{
+    position: relative;
+    height: 380px;
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#imgList1 {
+    list-style: none;
+    display: flex;
+    width: 2580px;
+    position: absolute;
+    left: 38px;
+}
+.yi{
+    display: flex;
+    justify-content: center;
+}
+.song1{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.song1 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song1:hover i{
+    opacity: 1;
+    cursor: pointer;
+}
+.song1:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+
+.song2{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.song2 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song2:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song3{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;  
+}
+.song3 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song3:hover img{
+    transform: scale(1.1); 
+}
+
+
+.er{
+    display: flex;
+    justify-content: center
+}
+.song4{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song4 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song4:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+.song5{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song5 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song5:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song6{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song6 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song6:hover img{
+    transform: scale(1.1); 
+}
+
+
+.san{
+    display: flex;
+    justify-content: center;
+}
+.song7{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song7 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song7:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song8{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song8 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song8:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song9{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song9 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song9:hover img{
+    transform: scale(1.1); 
+} 
+
+
+
+/* 文案4 */
+
+
+.wenzi1{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi1>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi1>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi1>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi1>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi2{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi2>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi2>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi2>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi2>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi3{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi3>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi3>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi3>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi3>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+
+
+.wenzi4{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi4>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi4>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi4>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi4>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi5{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi5>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi5>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi5>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi5>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi6{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi6>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi6>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi6>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi6>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+.wenzi7{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi7>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi7>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi7>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi7>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi8{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi8>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi8>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi8>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi8>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi9{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi9>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi9>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi9>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi9>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+/* 音乐封面5 */
+
+
+.si{
+    display: flex;
+    justify-content: center;
+}
+.song10{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.song10 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song10:hover i{
+    opacity: 1;
+    cursor: pointer;
+}
+.song10:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+
+.song11{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.song11 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song11:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song12{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: -10px;  
+}
+.song12 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song12:hover img{
+    transform: scale(1.1); 
+}
+
+
+.wu{
+    display: flex;
+    justify-content: center
+}
+.song13{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song13 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song13:hover img{
+    transform: scale(1.1); 
+}
+
+
+
+.song14{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song14 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song14:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song15{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song15 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song15:hover img{
+    transform: scale(1.1); 
+}
+
+
+.liu{
+    display: flex;
+    justify-content: center;
+}
+.song16{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song16 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song16:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song17{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song17 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song17:hover img{
+    transform: scale(1.1); 
+}
+
+
+.song18{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.song18 img{
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.8s; 
+}
+.song18:hover img{
+    transform: scale(1.1); 
+}
+
+
+/* 文案5 */
+
+.wenzi10{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi10>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi10>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi10>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi10>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi11{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi11>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi11>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi11>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi11>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi12{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: -10px;
+}
+.wenzi12>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi12>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi12>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi12>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+
+
+.wenzi13{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi13>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi13>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi13>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi13>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi14{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi14>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi14>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi14>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi14>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi15{
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi15>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi15>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi15>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi15>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+.wenzi16{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi16>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi16>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi16>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi16>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi17{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi17>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi17>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi17>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi17>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+.wenzi18{ 
+    position: relative;
+    height: 100px;
+    width: 180px;
+    font-size: 14.5px;
+    font-weight: 400;
+    z-index: 100;
+    margin: 1.5vw;
+    margin-top: 0vw;
+}
+.wenzi18>span:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer;
+}
+.wenzi18>span:nth-of-type(1){
+    position: absolute;
+    left: -2vw;
+    top: 1vw;
+}
+.wenzi18>span:nth-of-type(2){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    right: 0;
+    top: 1vw;
+}
+.wenzi18>span:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    position: absolute;
+    left: -2vw;
+    top: 2vw;
+}
+
+
+/* 底部 */
+
+
+.bottom{
+    width: 100%;
+    height: 415px;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    overflow: hidden;
+}
+.hang{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+.first1{
+    position: relative;
+    left: 20px;
+    color: rgb(153, 153, 153);
+}
+.first{
+    width: 200px;
+    height: 200px;
+    margin: 120px;
+    margin-top: 50px;
+}
+.hang1{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.f1{
+    color: rgb(153, 153, 153);
+}
+.f1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.fir{
+    margin: 25px;
+}
+.fir img{
+    width: 50px;
+}
+.fir img:hover{
+    cursor: pointer;
+}
+.s1{
+    color: rgb(153, 153, 153);
+}
+.s1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.sec{
+    margin: 25px;
+}
+.sec img{
+    width: 50px;
+}
+.sec img:hover{
+    cursor: pointer;
+}
+.t1{
+    color: rgb(153, 153, 153);
+}
+.t1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.thir{
+    margin: 25px;
+}
+.thir img{
+    width: 50px;
+}
+.thir img:hover{
+    cursor: pointer;
+}
+.fo1{
+    color: rgb(153, 153, 153);
+}
+.fo1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.fou{
+    margin: 25px;
+}
+.fou img{
+    width: 50px;
+}
+.fou img:hover{
+    cursor: pointer;
+}
+
+.second1{
+    position: relative;
+    left: 20px;
+    color: rgb(153, 153, 153);
+}
+.second{
+    width: 200px;
+    height: 200px;
+    margin: 120px;
+    margin-top: 50px;
+}
+.hang2{
+    display: flex;
+}
+.su1{
+    color: rgb(153, 153, 153);
+}
+.su1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.sq{
+    margin: 25px;
+}
+.sq img{
+    width: 50px;
+    height: 50px;
+}
+.sq img:hover{
+    cursor: pointer;
+}
+.se1{
+    color: rgb(153, 153, 153);
+}
+.se1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.sev{
+    margin: 25px;
+}
+.sev img{
+    width: 50px;
+}
+.sev img:hover{
+    cursor: pointer;
+}
+.eig{
+    margin: 25px;
+}
+.e1{
+    color: rgb(153, 153, 153);
+}
+.e1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.eig img{
+    width: 50px;
+}
+.eig img:hover{
+    cursor: pointer;
+}
+.n1{
+    color: rgb(153, 153, 153);
+}
+.n1:hover{
+    color: rgb(51, 206, 131);
+    cursor: pointer; 
+}
+.nin{
+    margin: 25px;
+}
+.nin img{
+    width: 50px;
+}
+.nin img:hover{
+    cursor: pointer;
+}
+
+.third1{
+    position: relative;
+    left: 10px;
+    color: rgb(153, 153, 153);
+}
+.third{
+    width: 400px;
+    height: 400px;
+    margin: 180px;
+    margin-top: 50px;
+}
+.hang3{
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
+.el{
+    margin: 15px;
+}
+.tp{
+    margin: 15px;
+}
+.thi{
+    margin: 15px;
+}
+.el div{
+    color: rgb(153, 153, 153);
+}
+.tp div{
+    color: rgb(153, 153, 153);
+}
+.thi div{
+    color: rgb(153, 153, 153);
+}
+.el div:hover{
+    color: rgb(51, 206, 131);
+}
+.tp div:hover{
+    color: rgb(51, 206, 131);
+}
+.thi div:hover{
+    color: rgb(51, 206, 131);
+}
+
+
+.bottom a{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    font-family: "Microsoft Yahei";
+    position: relative;
+    left: 520px;
+    top: 14px;
+}
+.bottom span{
+    color: rgb(153, 153, 153);
+    position: relative;
+    left: 520px;
+    top: 13px;
+}
+.grey1{
+    color: rgb(153, 153, 153);
+    position: relative;
+    font-size: 13px;
+    font-family: "Microsoft Yahei";
+    margin-left: 910px;
+    margin-top: -5px;
+    word-spacing: 2px;
+}    
+.grey2{
+    color: rgb(153, 153, 153);
+    position: relative;
+    font-size: 13px;
+    font-family: "Microsoft Yahei";
+    margin-left: 530px;
+    margin-top: 7px;
+    word-spacing: 1px;
+}
+.bottom>a:hover{
+    color: rgb(51, 206, 131);
+}
+
+
+
+
+
